@@ -1,7 +1,22 @@
 'use strict';
 
-var hljs = require('highlight.js');
-// import hljs from 'highlight.js';
+var hljs = require('highlight.js/lib/highlight.js');
+
+hljs.registerLanguage('bash', require('highlight.js/lib/languages/bash'));
+hljs.registerLanguage('cpp', require('highlight.js/lib/languages/cpp'));
+hljs.registerLanguage('css', require('highlight.js/lib/languages/css'));
+hljs.registerLanguage('go', require('highlight.js/lib/languages/go'));
+hljs.registerLanguage('java', require('highlight.js/lib/languages/java'));
+hljs.registerLanguage('javascript', require('highlight.js/lib/languages/javascript'));
+hljs.registerLanguage('json', require('highlight.js/lib/languages/json'));
+hljs.registerLanguage('perl', require('highlight.js/lib/languages/perl'));
+hljs.registerLanguage('php', require('highlight.js/lib/languages/php'));
+hljs.registerLanguage('python', require('highlight.js/lib/languages/python'));
+hljs.registerLanguage('ruby', require('highlight.js/lib/languages/ruby'));
+hljs.registerLanguage('swift', require('highlight.js/lib/languages/swift'));
+hljs.registerLanguage('scss', require('highlight.js/lib/languages/scss'));
+hljs.registerLanguage('sql', require('highlight.js/lib/languages/sql'));
+hljs.registerLanguage('yaml', require('highlight.js/lib/languages/yaml'));
 
 var vueHighlightJS = {};
 vueHighlightJS.install = function install(Vue) {
